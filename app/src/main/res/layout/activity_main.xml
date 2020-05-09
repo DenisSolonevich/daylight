@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+    <!--suppress AndroidUnknownAttribute -->
+    <TextView
+        android:id="@+id/lbl_app_goodbye"
+        fontPath="fonts/Roboto-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_company_goodbye"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_quote"
+        app:layout_constraintStart_toStartOf="@+id/lbl_quote"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_quote"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/lbl_quote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_quote"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_app_goodbye"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_company_greet"
+        app:layout_constraintStart_toStartOf="@+id/lbl_company_greet"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_company_greet" />
+
+    <!--suppress AndroidUnknownAttribute -->
+    <TextView
+        android:id="@+id/lbl_app_title"
+        fontPath="fonts/Roboto-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_company_greet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/lbl_company_greet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_company_greeting"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_quote"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_app_title"
+        app:layout_constraintStart_toStartOf="@+id/lbl_app_title"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_app_title" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_app_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="TODO"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_app_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

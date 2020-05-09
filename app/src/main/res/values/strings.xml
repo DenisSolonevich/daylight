@@ -1,0 +1,12 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Quotator</string>
+
+    <string name="text_quote">Let\'s sort the buyers from the spyers, the needy from the greedy, and those who trust me from the ones who don\'t.</string>
+
+    <string name="text_company_greeting">
+        <xliff:g example="Quotator" id="company">Daylight</xliff:g> is a localization company!
+    </string>
+
+    <string name="text_company_goodbye" translatable="false">Daylight says goodbye.</string>
+
+</resources>

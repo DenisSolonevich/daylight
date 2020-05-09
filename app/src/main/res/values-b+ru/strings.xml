@@ -1,0 +1,10 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Квататор</string>
+
+    <string name="text_quote">Те, кто верит, налетай, те, кто жадный, убегай.</string>
+
+    <string name="text_company_greeting">
+        <xliff:g example="Quotator" id="company">Daylight</xliff:g> говорит Привет!
+    </string>
+
+</resources>

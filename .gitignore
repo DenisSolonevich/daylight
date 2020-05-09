@@ -83,3 +83,16 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+
+/.idea
+*.iml
+/local.properties
+.DS_Store
+/build
+.externalNativeBuild
+.cxx
+/.gradle
+/.navigation
+/captures/
+/gradlew-env.bat
